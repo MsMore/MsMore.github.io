@@ -785,6 +785,9 @@ h1, h2, h3, h4, h5, h6, figure {
     height: 270px;
   }
 }
+.work .img {
+  padding: 20px;
+}
 .work .desc {
   display: table-cell;
   vertical-align: middle;
