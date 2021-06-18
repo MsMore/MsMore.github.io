@@ -1142,7 +1142,9 @@ input[type="text"] {
   text-decoration: none;
   outline: none;
 }
-
+#resume {
+  color: #000;
+}
 .btn {
   margin-right: 4px;
   margin-bottom: 4px;
