@@ -10,6 +10,9 @@
 * 	Template Style 
 *
 * ======================================================= */
+::-webkit-scrollbar {
+  display: none;
+}
 body {
   font-family: "Space Mono", Arial, serif;
   font-weight: 400;
@@ -17,6 +20,7 @@ body {
   line-height: 1.7;
   color: #000000;
   background: rgb(255, 255, 255);
+  overflow-x: hidden;
 }
 
 #page {
