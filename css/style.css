@@ -124,6 +124,7 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 0;
   color: white;
 }
+
 #fh5co-header .display-tc h1,
 .fh5co-cover .display-tc h1 {
   font-family: "Kaushan Script", cursive;
@@ -277,7 +278,9 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-cover .display-tc .fh5co-social-icons li a i {
   font-size: 30px;
 }
-
+#fh5co-header .display-tc .fh5co-social-icons li a:hover i {
+color: #FFC107;
+}
 #fh5co-features {
   background: #7952B3;
 }
@@ -315,6 +318,11 @@ h1, h2, h3, h4, h5, h6, figure {
   vertical-align: middle;
   height: 100px;
   color: #7952B3 !important;
+}
+#fh5co-features .feature-left .icon:hover i {
+color: white !important;
+background: #7952B3;
+
 }
 #fh5co-features .feature-left .feature-copy {
   width: 100%;
@@ -792,7 +800,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: table-cell;
   vertical-align: middle;
   height: 270px;
-  background: rgba(255,255,255, 0.8);
+  background: rgb(255,193,7);
 
   opacity: 0;
   -webkit-transition: 0.3s;
@@ -874,7 +882,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-blog {
   width: 100%;
   float: left;
-  margin-bottom: 40px;
+  margin-bottom: 140px;
 }
 @media screen and (max-width: 768px) {
   .fh5co-blog {
@@ -888,7 +896,11 @@ h1, h2, h3, h4, h5, h6, figure {
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
-  height: 300px;
+  height: 0px;
+}
+.fh5co-blog:hover .blog-bg {
+height: 200px;
+
 }
 @media screen and (max-width: 768px) {
   .fh5co-blog .blog-bg {
