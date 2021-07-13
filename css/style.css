@@ -21,6 +21,7 @@ body {
   color: #000000;
   background: rgb(255, 255, 255);
   overflow-x: hidden;
+
 }
 
 #page {
@@ -31,6 +32,7 @@ body {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+
 }
 .offcanvas #page {
   overflow: hidden;
@@ -51,13 +53,13 @@ body {
 }
 
 a {
-  color: #7952B3;
+  color: #022778;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: #7952B3;
+  color: #022778;
   outline: none;
   text-decoration: none;
 }
@@ -78,17 +80,17 @@ h1, h2, h3, h4, h5, h6, figure {
 
 ::-webkit-selection {
   color: #fff;
-  background: #7952B3;
+  background: #FFC107;
 }
 
 ::-moz-selection {
   color: #fff;
-  background: #7952B3;
+  background: #FFC107;
 }
 
 ::selection {
   color: #fff;
-  background: #7952B3;
+  background: #FFC107;
 }
 
 #fh5co-header,
@@ -107,7 +109,7 @@ h1, h2, h3, h4, h5, h6, figure {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgb(121, 82, 179,0.5);
+  background: rgba(0, 0, 0, 0.672);
 }
 #fh5co-header .display-t,
 .fh5co-cover .display-t {
@@ -177,7 +179,7 @@ h1, h2, h3, h4, h5, h6, figure {
   line-height: 1.55;
   margin: 0 auto;
   text-align: center;
-  box-shadow: 0 0 0 10px #7952B3;
+  box-shadow: 0 0 0 10px #022778;
   display: block;
 }
 
@@ -191,7 +193,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .service-box:hover .ico-circle {
   transition: all 500ms ease;
   color: #FFf;
-  background-color: #7952B3;
+  background-color: #022778;
   box-shadow: 0 0 0 20px #d3c5e6;
 }
 
@@ -265,8 +267,8 @@ h1, h2, h3, h4, h5, h6, figure {
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   margin: 0 auto;
   margin-bottom: 30px;
   -webkit-border-radius: 50%;
@@ -286,7 +288,7 @@ h1, h2, h3, h4, h5, h6, figure {
 color: #FFC107;
 }
 #fh5co-features {
-  background: #7952B3;
+  background: #022778;
 }
 #fh5co-features h2 {
   color: #fff;
@@ -321,11 +323,11 @@ color: #FFC107;
   display: table-cell;
   vertical-align: middle;
   height: 100px;
-  color: #7952B3 !important;
+  color: #022778 !important;
 }
 #fh5co-features .feature-left .icon:hover i {
 color: white !important;
-background: #7952B3;
+background: #022778;
 
 }
 #fh5co-features .feature-left .feature-copy {
@@ -377,7 +379,7 @@ background: #7952B3;
 
 .fh5co-bg-dark {
   background: #2F3C4F;
-  background: #7952B3;
+  background: #022778;
 }
 .fh5co-bg-dark .fh5co-heading h2 {
   color: #fff !important;
@@ -434,7 +436,7 @@ background: #7952B3;
   display: inline-block;
   zoom: 1;
   *display: inline;
-  color: #7952B3;
+  color: #022778;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -471,7 +473,7 @@ background: #7952B3;
   font-size: 20px;
 }
 #fh5co-about .fh5co-social-icons li a:hover {
-  background: #7952B3;
+  background: #022778;
 }
 
 
@@ -602,7 +604,7 @@ background: #7952B3;
   top: 40px;
   left: 50%;
   margin-left: -21px;
-  background-color: #7952B3;
+  background-color: #022778;
   z-index: 100;
   display: table;
   -webkit-border-radius: 50%;
@@ -875,7 +877,7 @@ background: #7952B3;
   height: 54px;
   border: none !important;
   background: #fff;
-  color: #7952B3;
+  color: #022778;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 400;
