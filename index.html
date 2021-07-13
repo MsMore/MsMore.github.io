@@ -40,6 +40,7 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+	
 
 	</head>
 	<body>
@@ -541,7 +542,8 @@
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 					<h2>CERTIFICATES</h2>
-					<p>“You can’t teach people everything they need to know. The best you can do is position them where they can find what they need to know when they need to know it.”<br> - Seymour Papert, MIT mathematician, educator, and computer scientist.</p>
+					<p>“certificates can’t replace self-education.”
+						<br>- Sunday Adelaja</p>
 				</div>
 			</div>
 			<div class="row">
@@ -591,10 +593,23 @@
 			<div class="services-padding">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2>CO-CURRICULARS AND VOLUNTEERING</h2>
+						<h2>EXTRA/CO-CURRICULARS AND VOLUNTEERING</h2>
 					</div>
 				</div>
 				<div class="row">
+					<div class="col-md-3 text-center">
+						<div class="feature-left">
+							<span class="icon">
+								
+								<i class="icon-hand"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Rotaract Club</h3>
+								<p>Part of the Public Relations team and web developer and coordinator.</p>
+								<h4>June 2021 - Feb 2022</h4>
+							</div>
+						</div>
+					</div>
 					<div class="col-md-3 text-center">
 						<div class="feature-left">
 							<span class="icon">
@@ -602,9 +617,7 @@
 							</span>
 							<div class="feature-copy">
 								<h3>Angel Xpress</h3>
-								<p>Volunteered as a teacher in a Mumbai-based NGO for 
-									the betterment of school going children from 
-									neighboring slums</p>
+								<p>Volunteered as a teacher in a Mumbai-based NGO in the neighbouring slums</p>
 								<h4>June 2021 - Feb 2022</h4>
 							</div>
 						</div>
@@ -617,8 +630,7 @@
 							</span>
 							<div class="feature-copy">
 								<h3>Ensemble lite Fest Coordinator</h3>
-								<p>Coordinated at the two day long cultural-cumtechnical fest conducted by the student committee of 
-									WIEECT College</p>
+								<p>Two day long cultural/ technical events, </p>
 									<h4>Feb 2020</h4>
 							</div>
 						</div>
@@ -630,11 +642,8 @@
 								<i class="icon-mic"></i>
 							</span>
 							<div class="feature-copy">
-								<h3>Debates and Speeches</h3>
-								<p>Participated in many debates conducted in school, 
-									gave speeches and conducted daily assembly 
-									anchoring.
-									</p>
+								<h3>Anchoring</h3>
+								<p>Assembly anchoring, speeches for important days.</p>
 									<h4>2015 - 2017</h4>
 							</div>
 						</div>
@@ -646,16 +655,52 @@
 								<i class="icon-pen"></i>
 							</span>
 							<div class="feature-copy">
-								<h3>Sanskrit Poem Recitation</h3>
-								<p>Mumbai region silver medalist in poem recitation for 
-									Sanskrit week conducted by central board of 
-									secondary education.
-									</p>
+								<h3>Sampoorna Shiksha</h3>
+								<p>Created study material for home schooled students</p>
 									<h4>Aug 2017</h4>
 							</div>
 						</div>
 
-					</div>					
+					</div>	
+					<div class="col-md-3 text-center">
+						<div class="feature-left">
+							<span class="icon">
+								
+								<i class="icon-game-controller"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Gaming</h3>
+								<p>I love gaming, game development and analysis.</p>
+								<h4>June 2021 - Feb 2022</h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 text-center">
+						<div class="feature-left">
+							<span class="icon">
+								
+								<i class="icon-air"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Swimming</h3>
+								<p>I swim in summers as a way to relax and rejuvenate</p>
+								<h4>June 2021 - Feb 2022</h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 text-center">
+						<div class="feature-left">
+							<span class="icon">
+								
+								<i class="icon-book3"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Reading</h3>
+								<p>Light reader of adventure and fantasy fiction</p>
+								<h4>June 2021 - Feb 2022</h4>
+							</div>
+						</div>
+					</div>				
 				</div>
 			</div>
 		</div>
@@ -760,7 +805,38 @@
 	
 	<!-- Main -->
 	<script src="js/main.js"></script>
+	<script>
 
+        document.onmousemove = cursorAnim;
+        var colors = ['#ccc','#6cf','#eba13a']
+        function cursorAnim(event){
+
+            var circle = document.createElement('div');
+            circle.setAttribute('class', 'circle');
+            document.body.appendChild(circle);
+            // var circle = document.querySelector('div.circle');
+
+            circle.style.left = event.clientX + 'px';
+            circle.style.top = event.clientY + 'px';
+
+            var color = colors[Math.floor(Math.random() * colors.length)];
+            circle.style.borderColor = color;
+
+            circle.style.transition = "all 15s ease 0s"
+
+            circle.style.left = circle.offsetLeft - 100 + 'px';
+            circle.style.top = circle.offsetTop - 50 + 'px';
+
+        
+
+            circle.style.width = "5px";
+            circle.style.height = "5px";
+            circle.style.borderWidth = "10px";
+            circle.style.borderRadius = "50";
+            circle.style.opacity = "0";
+
+        }
+    </script>
 	</body>
 </html>
 

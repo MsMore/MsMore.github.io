@@ -13,6 +13,7 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
 body {
   font-family: "Space Mono", Arial, serif;
   font-weight: 400;
@@ -109,7 +110,7 @@ h1, h2, h3, h4, h5, h6, figure {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.672);
+  background: rgba(0, 0, 0, 0.7);
 }
 #fh5co-header .display-t,
 .fh5co-cover .display-t {
@@ -194,7 +195,7 @@ h1, h2, h3, h4, h5, h6, figure {
   transition: all 500ms ease;
   color: #FFf;
   background-color: #022778;
-  box-shadow: 0 0 0 20px #d3c5e6;
+  box-shadow: 0 0 0 20px #feffd2;
 }
 
 .service-box .service-ico {
@@ -326,8 +327,9 @@ color: #FFC107;
   color: #022778 !important;
 }
 #fh5co-features .feature-left .icon:hover i {
-color: white !important;
-background: #022778;
+/* color: white !important;
+background: #022778; */
+transform: scale(0.9);
 
 }
 #fh5co-features .feature-left .feature-copy {
@@ -612,6 +614,10 @@ background: #022778;
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
+.timeline > li > .timeline-badge:hover {
+  transform: scale(0.95);
+
+}
 @media screen and (max-width: 768px) {
   .timeline > li > .timeline-badge {
     margin-left: -10px !important;
@@ -806,7 +812,7 @@ background: #022778;
   display: table-cell;
   vertical-align: middle;
   height: 270px;
-  background: rgb(255,193,7);
+  background: rgb(241, 225, 175);
 
   opacity: 0;
   -webkit-transition: 0.3s;
@@ -902,20 +908,20 @@ background: #022778;
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
-  height: 0px;
+  height: 100px;
 }
 .fh5co-blog:hover .blog-bg {
-height: 200px;
+transform: scale(0.9);
 
-}
+} 
 @media screen and (max-width: 768px) {
   .fh5co-blog .blog-bg {
-    height: 400px;
+    height: 100px;
   }
 }
 @media screen and (max-width: 480px) {
   .fh5co-blog .blog-bg {
-    height: 270px;
+    height: 100px;
   }
 }
 .fh5co-blog .blog-text {
@@ -1374,3 +1380,11 @@ input[type="text"] {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.circle{
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  border: 0px solid #000;
+  border-radius: 36px;
+}
