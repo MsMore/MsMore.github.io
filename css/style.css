@@ -806,9 +806,6 @@ transform: scale(0.9);
     height: 270px;
   }
 }
-.work .img {
-  padding: 20px;
-}
 .work .desc {
   display: table-cell;
   vertical-align: middle;
