@@ -1,0 +1,363 @@
+/* style.css - Riddhi More Portfolio Theme */
+
+/* -- FONTS -- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;500;700&display=swap');
+
+:root {
+  --peach: #FFD9B7;
+  --sky: #A3DFFF;
+  --main: #2E4765;
+  --accent: #f1798b;
+  --gray: #f8f9fa;
+  --white: #fffefd;
+  --shadow: 0 3px 24px #b0cee433;
+  --radius: 16px;
+  --radius-s: 12px;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  color: var(--main);
+  background: var(--gray);
+  letter-spacing: 0.01em;
+  margin: 0;
+  padding: 0;
+}
+
+/* -- HEADER -- */
+header {
+  background: linear-gradient(107deg, #d9f5f8, #a6e5f6 75%);
+  padding: 2.6rem 0 2.2rem 0;
+  text-align: center;
+  border-radius: 0 0 32px 32px;
+  margin-bottom: 2.6rem;
+}
+
+.profile-pic {
+  width: 222px;
+  height: 222px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+  border: 5px solid var(--white);
+  margin-bottom: 1rem;
+  background: #fff;
+}
+
+/* -- TYPOGRAPHY -- */
+.headline {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.1rem;
+  font-weight: 900;
+  letter-spacing: .003em;
+  color: var(--main);
+}
+
+.subhead {
+  color: var(--accent);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.42rem;
+  color: var(--main);
+  margin-top: 1.6rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: .03em;
+}
+
+/* -- NAV & LINKS -- */
+.social-links {
+  margin: 10px 0 0 0;
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social-links a {
+  color: var(--main);
+  font-weight: 500;
+  text-decoration: underline;
+  font-size: 1em;
+}
+
+/* -- MAIN CONTENT LAYOUT -- */
+.container {
+  max-width: 920px;
+}
+
+.content-section {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 2rem 2rem 1.5rem 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .content-section { padding: 1.2rem 0.6rem 1.1rem 0.6rem; }
+  header { border-radius: 0 0 22px 22px; padding-bottom: 1.5rem;}
+  .section-title { font-size: 1.12rem; padding-left: .3rem;}
+}
+
+/* -- CARDS (Projects, Publications) -- */
+.card, .project-card {
+  border: none;
+  background: var(--gray);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.17s;
+}
+
+.card:hover, .project-card:hover {
+  box-shadow: 0 8px 48px #afdfee49;
+}
+
+.card-title, .project-title {
+  font-weight: 700;
+  color: var(--main);
+  font-size: 1.15em;
+  margin-bottom: .25em;
+}
+
+.card-meta, .project-meta {
+  font-size: .99em;
+  color: #7ba6c4;
+  margin-bottom: .25em;
+}
+
+.card-img-top {
+  background: #f5f7fa;
+  height: 135px;
+  width: auto;
+  object-fit: contain;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+
+/* -- BADGES & TAGS -- */
+.skill-badge {
+  display: inline-block;
+  background: var(--sky);
+  color: var(--main);
+  border-radius: 12px;
+  padding: 2px 14px;
+  font-size: .92em;
+  margin-bottom: 3px;
+  margin-right: 4px;
+  font-weight: 500;
+}
+
+/* -- LISTS -- */
+.pub-list,
+.edu-list,
+.exp-list {
+  margin-bottom: 0;
+  padding-left: 17px;
+}
+.pub-list li, .edu-item, .exp-item { margin-bottom: .6em; }
+
+.edu-title, .exp-title {
+  font-weight: 600;
+  color: var(--main);
+}
+.exp-role {
+  font-size: 1.07em;
+  font-weight: 500;
+  color: var(--accent);
+}
+.date-loc {
+  font-size: .96em;
+  color: #659ebb;
+  font-weight: 500;
+}
+
+/* -- CONTACT & FOOTER -- */
+.footer {
+  text-align: center;
+  color: #8799a4;
+  font-size: .97em;
+  background: transparent;
+  padding: 2.2rem 0 1.1rem 0;
+  margin-top: 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  color: var(--main);
+}
+
+a:hover, a:focus {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.pdf-badge {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 12px;
+  padding: 2px 14px;
+  font-size: 0.95em;
+  font-weight: 600;
+  margin-top: 4px;
+  margin-right: 4px;
+  vertical-align: middle;
+  text-decoration: none;
+  box-shadow: 0 1px 8px #f1798b18;
+  transition: background 0.14s, box-shadow 0.17s, transform 0.10s;
+  /* NEW: Prevent flex stretching */
+  align-self: flex-start;
+}
+.pdf-badge:hover, .pdf-badge:focus {
+  background: #fc5d81;
+  color: #fff;
+  box-shadow: 0 4px 14px #f1798b37;
+  transform: translateY(-2px) scale(1.04);
+  text-decoration: none;
+}
+
+/* -- UTILITIES -- */
+.mt-1 { margin-top: 1rem !important; }
+.mt-2 { margin-top: 2rem !important; }
+.mb-0 { margin-bottom: 0 !important; }
+.mb-2 { margin-bottom: 2rem !important; }
+.text-muted { color: #8da5b1 !important; }
+
+
+
+/* Dark Mode */
+body.dark-mode {
+  --peach: #472a20;
+  --sky: #293e47;
+  --main: #e5edf8;
+  --accent: #ff97b6;
+  --gray: #202530;
+  --white: #23243b;
+  --shadow: 0 4px 24px #102d3f80;
+  background: var(--gray);
+  color: var(--main);
+}
+body.dark-mode .content-section,
+body.dark-mode .card,
+body.dark-mode .project-card {
+  background: var(--white);
+  box-shadow: 0 3px 17px #13193277;
+}
+body.dark-mode .section-title,
+body.dark-mode .headline,
+body.dark-mode a {
+  color: var(--main);
+}
+body.dark-mode .subhead {
+  color: var(--accent);
+}
+body.dark-mode .footer {
+  color: #b3bac2;
+}
+body.dark-mode .skill-badge,
+body.dark-mode .pdf-badge {
+  background: var(--sky);
+  color: var(--main)!important;
+}
+body.dark-mode .pdf-badge {
+  background: var(--accent);
+  color: #fff!important;
+}
+body.dark-mode .card-meta, 
+body.dark-mode .project-meta,
+body.dark-mode .text-muted {
+  color: #b2c6d4 !important;
+}
+body.dark-mode .card-img-top {
+  background: #303c45;
+}
+body.dark-mode header {
+  background: linear-gradient(107deg, #2e415d 50%, #293e47 100%);
+}
+
+body.dark-mode .navbar {
+  background: #23243b !important;
+}
+body.dark-mode .navbar .nav-link,
+body.dark-mode .navbar .navbar-brand {
+  color: var(--main)!important;
+}
+body.dark-mode .navbar .nav-link.active {
+  color: var(--accent)!important;
+}
+body.dark-mode .card,
+body.dark-mode .project-card {
+  color: var(--main);
+}
+body.dark-mode .card-title,
+body.dark-mode .project-title,
+body.dark-mode .card-text,
+body.dark-mode .card-body {
+  color: var(--main) !important;
+}
+
+/* Nav Bar */
+
+#mainNav {
+  transition: top 0.3s;
+  top: -100px; /* hidden by default, adjust this height if your nav is bigger */
+  z-index: 1050;
+}
+#mainNav.nav-visible { top: 0; }
+@media (max-width: 991px) {
+  #mainNav, #mainNav.nav-visible { top: 0; }
+}
+
+/* Make navbar shorter: reduces vertical padding */
+#mainNav, .navbar {
+  min-height: 35px !important;
+  padding-top: 2rem !important;
+  padding-bottom: 0 !important;
+}
+.navbar-nav .nav-link {
+  padding-top: 0.2rem !important;
+  padding-bottom: 0.2rem !important;
+  font-size: 1em;
+}
+/* Make hamburger (collapsed menu) lines more compact */
+.navbar-toggler {
+  padding-top: 0.15rem !important;
+  padding-bottom: 0.15rem !important;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--accent)!important;
+}
+
+/* Dark mode support for navbar */
+body.dark-mode .navbar,
+body.dark-mode #mainNav {
+  background: #23243b !important;
+}
+
+body.dark-mode .navbar .nav-link,
+body.dark-mode .navbar .navbar-brand {
+  color: var(--main)!important;
+}
+body.dark-mode .navbar .nav-link.active {
+  color: var(--accent)!important;
+}
+body.dark-mode .navbar-toggler {
+  background: #303444;
+}
+
+header {
+  margin-top: 68px; /* adjust to match navbar, including shadow */
+}
+@media (max-width: 991px) {
+  header { margin-top: 56px; } /* Nav always visible on mobile, keep it tidy */
+}
